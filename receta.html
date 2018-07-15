@@ -7,74 +7,82 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="receta.css">
     <title>Clinitec - Receta</title>
 </head>
 
-<body>
-    <div class="container card" style="width: 700px;">
+<body style="margin-top: 60px;">
+    <div class="container" style="width: 700px;">
         <div class="row">
             <div class="col-md-4 logo">
                 <img src="img/loguito.jpg" width="150" alt="">
             </div>
 
-            <div class=" pre col-md-8 titulo">
-                    <p>
-                        Dra. Marilyn Urbina Romero
-                    </p>
-                    
-                    <p>
-                        MEDICO
-                    </p>
+            <div class="col-md-8 titulo">
+                <p class="text-receta"> Hospital: Nombre </p>
 
-                    <p>
-                        No se donde estudio
-                    </p>
+                <p class="text-receta"> Direccion del hospital: por ahi esta </p>
 
-                    <p>
-                        CEDULA. 6233495
-                    </p>
+                <p class="text-receta"> Col: no se &emsp;&emsp; CP: aja aja &emsp;&emsp; Edo y Cd: Aqui y no se </p>
+
+                <p class="text-receta"> Tel: 26296262 &emsp;&emsp; Fax: 295-6262 </p>
+
+                <p> Correo: alguien@estaaqui.com </p>
             </div>
         </div>
 
         <hr>
+        <h2 class="text-center"> RECETA MEDICA </h2>
+        <hr>
 
-        <div class="row">
-            <div class="col-md-12">
-                <label>Nombre</label>
-                <input class="text-center form-control" type="text" placeholder="Nombre del paciente">
+        <div class="row justify-content-center align-items-center">
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="rg col-md4">
+                            <p class="card-text">No expediente:</p>
+                        </div>
+
+                        <div class="col-md4" style="margin-left: 44px;">
+                            <p class="card-text"> Nombre del paciente:</p>
+                        </div>
+                    </div>
+
+                    <p class="text-center">Fecha de nac: &emsp;&emsp;&emsp; Edad: </p>
+                    <p class="text-center">Sexo: &emsp;&emsp; T.Sangre: </p>
+                    <br>
+
+                </div>
+            </div>
+
+            <div class=" der col-md-5">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <p class="card-text text-center"> ID Solicitud </p>
+                        <h5 class="card-title text-center"> 12345 </h5>
+                        <p class="card-text"> Fecha de solicitud: </p>
+                        <p class="card-text"> Fecha de impresión: </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-5">
-                <label>Fecha</label>
-                <input class="text-center form-control" type="date" placeholder="Fecha de Consulta">
-
-                <label>Edad</label>
-                <input class="text-center form-control" type="text" placeholder="Edad *">
-
-                <label>Peso</label>
-                <input class="text-center form-control" type="text" placeholder="Peso *">
-
-                <label>Talla</label>
-                <input class="text-center form-control" type="text" placeholder="Talla *">
-
-                <label>Temperatura</label>
-                <input class="text-center form-control" type="text" placeholder="Temperatura *">
-
-                <label>Alergias</label>
-                <textarea class="form-control" cols="35" rows="5"></textarea>
-            </div>
-
-            <div class="col-md-7">
-                <label>Indicaciones</label>
-                <textarea class="form-control" cols="30" rows="20"></textarea>
+        <!-- CONTENEDOR PARA RECETA -->
+        <hr>
+        <div class="row justify-content-center align-items-center">
+            <div>
+                <div class="card prescription" style="width: 70rem;">
+                    <div class="card-body">
+                        CONTENIDO DE RECETA
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
